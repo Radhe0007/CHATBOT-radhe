@@ -17,7 +17,7 @@ async def must_join_channel(client: Client, msg: Message):
         except UserNotParticipant:
             try:
                 if MUST_JOIN.isalpha():
-                    link = "https://t.me/" + MUST_JOIN
+               r     link = "https://t.me/" + MUST_JOIN
                 else:
                     chat_info = await nexichat.get_chat(MUST_JOIN)
                     link = chat_info.invite_link
@@ -26,7 +26,7 @@ async def must_join_channel(client: Client, msg: Message):
                         photo="https://envs.sh/Tn_.jpg",
                         caption=(
                             f"**👋 ʜᴇʟʟᴏ {msg.from_user.mention},**\n\n"
-                            f"**ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴛʜᴇ [ᴄʜᴀɴɴᴇʟ](https://t.me/The_Incricible) ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇs ʜᴇʀᴇ**"
+                            f"**ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴛʜᴇ [ᴄʜᴀɴɴᴇʟ](https://t.me/ll_BOTCHAMBER_ll) ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇs ʜᴇʀᴇ**"
                         ),
                         reply_markup=InlineKeyboardMarkup(
                             [[InlineKeyboardButton("๏ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ๏", url=link)]]
